@@ -5,7 +5,7 @@
 # Hướng dẫn chạy
 - Tạo file .env ở thư mục gốc  
   
-DATABASE_URL="mysql://root:password@localhost:3306/todo_db"  
+DATABASE_URL="mysql://root:root_password_123@localhost:3306/todo_db"  
 PORT=3000  
   
 - Khởi tạo CSDL    
