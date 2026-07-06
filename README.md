@@ -7,16 +7,17 @@
 B1: khởi tạo CSDL  
 B2: đồng bộ cấu trúc bảng bằng prisma  
 B3: vào thư mục backend cài đặt các thư viện, chạy backend  
-B4: vào thư mục frontend cài đặt các thư viện, chạy frontend  
+B4: vào thư mục frontend cài đặt các thư viện, chạy frontend
 
 ```bash
 docker-compose up -d
 
-npx prisma migrate dev --name init
-npx prisma generate
+
 
 cd Backend
 npm install
+npx prisma migrate dev --name init
+npx prisma generate
 npm start
 
 cd Frontend
