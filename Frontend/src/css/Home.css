@@ -1,0 +1,66 @@
+.app_container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.main_content_app {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 0 0 20px;
+  box-sizing: border-box;
+}
+
+.main_title {
+  margin: 16px;
+  font-size: 22px;
+  color: #202124;
+}
+
+.task_view_container {
+  flex: 1;
+  overflow: hidden;
+  border-top: 1px solid #dadce0;
+}
+
+.sidebar_right {
+  flex: 1;
+  max-width: 400px;
+  min-width: 300px;
+  background-color: #ffffff;
+}
+
+.status_summary_bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.summary_item {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 16px;
+  background-color: #f1f3f4;
+  color: #5f6368;
+}
+
+.summary_item.active_summary {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+}
+
+.summary_item.overdue_summary {
+  background-color: #fce8e6;
+  color: #d93025;
+}
+
+.summary_item.completed_summary {
+  background-color: #e6f4ea;
+  color: #137333;
+}

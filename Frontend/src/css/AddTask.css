@@ -1,0 +1,97 @@
+.add_task_modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+.add_task_modal {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.2s ease-out; 
+}
+
+.form_group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form_group label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.form_group input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form_group input:focus {
+  border-color: #0066cc;
+}
+
+.form_group_row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.form_actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.form_actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.btn_save {
+  background-color: #0066cc;
+  color: white;
+}
+
+.btn_cancel {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn_delete {
+  background-color: #ff3b30;
+  color: white;
+  margin-right: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

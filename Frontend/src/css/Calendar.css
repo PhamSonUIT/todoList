@@ -1,0 +1,113 @@
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btn_add_task {
+    margin: 20px;
+    padding: 12px 30px; 
+    border-radius: 24px; 
+    border: none;
+    background-color: #1a73e8;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: background-color 0.2s;
+}
+
+.btn_add_task:hover {
+    background-color: #1557b0;
+}
+
+.mini_cal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.mini_cal_title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3c4043;
+}
+
+.mini_cal_nav button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #5f6368;
+    border-radius: 50%;
+}
+.mini_cal_nav button:hover {
+    background-color: #f1f3f4;
+}
+
+.day_of_week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    width: 100%;
+}
+
+.day_of_week span {
+    margin: 8px 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: #70757a;
+}
+
+.day_of_month {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    width: 100%;
+}
+
+.day {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    margin: 4px auto; 
+    font-size: 12px;
+    color: #c0c0c0;
+    border-radius: 50%;
+    transition: background-color 0.15s;
+}
+
+.day:hover {
+    background-color: #f1f3f4;
+}
+
+.day.current_month {
+    color: #3c4043; 
+}
+
+.day.is_today {
+    background-color: #1a73e8 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.day.is_today:hover {
+    background-color: #1557b0 !important;
+}
+
+.day.is_selected {
+    background-color: #e8f0fe !important;
+    color: #1a73e8 !important;
+    font-weight: bold;
+}
